@@ -1,0 +1,8 @@
+<launch>
+ <include file ="$(find topics_pkg)/launch/sub_launcher.launch"/>
+ <node pkg="topics_pkg" type="topics_quiz.py" name="vel_publisher" output="screen"> 
+  <node pkg="topics_pkg" type="topics_quiz.py" name="forward_scan_simple" output="screen"> 
+ </node>
+ </node>
+</launch>
+
